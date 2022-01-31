@@ -7,7 +7,7 @@
   padding: 0;
 }
 p {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -35,7 +35,7 @@ h4 {
 .box {
   position: relative;
   background-color: #f1f1f1;
-  margin: 10px auto;
+  margin: 30px auto;
   padding: 30px;
   box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.3),
     10px 0 10px -8px rgba(0, 0, 0, 0.3);
@@ -64,7 +64,23 @@ h4 {
 #vscodeimage:hover {
   transform: scale(120%);
 }
-
+#note3ParentBox {
+  position: relative;
+  width: 60%;
+  height: 400px;
+  margin: 10px auto;
+}
+#note3ChildBox {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #d2d2d2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transition 0.3s ease-in-out;
+  transition-property: top, bottom, left, right;
+}
 
 /********************** C O L L E C T I V E *********************/
 .border p {
