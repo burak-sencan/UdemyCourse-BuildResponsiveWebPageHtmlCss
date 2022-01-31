@@ -1,2 +1,1 @@
-## I'm following this udemy course.
-##  https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/
+## just summary note for section 1-2-3-4
