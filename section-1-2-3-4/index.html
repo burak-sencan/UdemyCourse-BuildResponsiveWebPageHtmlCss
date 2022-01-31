@@ -23,7 +23,7 @@
 
       <div class="box" id="note1">
         <h1>Pseudo :: or : ?</h1>
-        <h2>Psedou-elements</h2>
+        <h2><span class="dot"></span> Psedou-elements</h2>
         <p>
           A CSS pseudo-element is a keyword added to a selector that lets you
           style a specific part of the selected element(s).
@@ -45,7 +45,7 @@
           </article>
           <br />
         </div>
-        <h2>Psedou-classes</h2>
+        <h2><span class="dot"></span> Psedou-classes</h2>
         <p>
           A CSS pseudo-class is a keyword added to a selector that specifies a
           special state of the selected element(s).
@@ -69,12 +69,83 @@
             myDiv :: nth-child(idx) {. . .} <br />
             a :: visited {. . .}
           </div>
-        </artic>
+        </article>
       </div>
 
-
       <div class="box" id="id2">
-        i will continue adding to new note 
+        <h1>Priority in Css</h1>
+        <p>
+          <span class="dot"></span>
+          In css there 6 priority(specificity) that decided which css rule
+          applied.
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
+            >MDN</a
+          >
+        </p>
+        <div class="baseNoteP">
+          <span class="red">Highest</span>
+          <div class="tab">
+            <ol>
+              <li>!important</li>
+              <li>InlineStyle</li>
+              <li>ID selector</li>
+              <li>Class selector</li>
+              <li>Element selector</li>
+              <li>Universal selector</li>
+            </ol>
+          </div>
+
+          <span class="blue">Lowest</span>
+          <br />
+          <br />
+        </div>
+        <p>
+          <span class="dot"></span> Also vscode help this issue when hovered
+          selector
+        </p>
+        <h3>(X, Y, Z)</h3>
+        <p>Consider that X is the number of ID selectors in the selector</p>
+        <p>
+          Y represents the number of class selectors, attribute selectors, and
+          pseudo-classes
+        </p>
+        <p>Z represents the number of type selectors and pseudo-elements</p>
+        <img id="vscodeimage" src="./img/vscode-specificity.png" alt="" />
+        <br />
+        <div class="baseNoteP">
+          <div class="border borderAnimate">
+            <div class="tab">
+              <h3>Example 1:&emsp; specificity (0-0-1)</h3>
+              <p>div { . . . }</p>
+
+              <h3>Example 2:&emsp; specificity (0-0-2)</h3>
+              <p>div p { . . . }</p>
+
+              <h3>Example 3:&emsp; specificity (0-0-5)</h3>
+              <p>div p a ul li { . . . }</p>
+            </div>
+          </div>
+          <div class="border borderAnimate">
+            <div class="tab">
+              <h3>Example 4:&emsp; specificity (0-1-0)</h3>
+              <p>.container { . . . }</p>
+              <h3>Example 5: &emsp;specificity (0-1-1)</h3>
+              <p>.container p { . . . }</p>
+            </div>
+          </div>
+          <div class="border borderAnimate">
+            <div class="tab">
+              <h3>Example 6:&emsp; specificity (1-1-0)</h3>
+              <p>#vscodeimage:hover { . . . }</p>
+            </div>
+          </div>
+          <div class="border borderAnimate">
+            <div class="tab">
+              <h3>Example 7:&emsp; specificity (1-0-0)</h3>
+              <p>#main-header { . . . }</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

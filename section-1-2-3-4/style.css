@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+/******************* E L E M E N T ***********************/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+p {
+  margin-bottom: 5px;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -16,13 +20,15 @@ h1 {
 h3 {
   text-align: justify;
 }
-h4{
-    margin-bottom: 10px;
+h4 {
+  margin-bottom: 10px;
 }
+
+/********************** C L A S S **************************/
 .container {
   width: 100%;
   height: auto;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 10px auto;
 }
 
@@ -31,8 +37,8 @@ h4{
   background-color: #f1f1f1;
   margin: 10px auto;
   padding: 30px;
-  box-shadow: -10px 0 8px -8px rgba(0, 0, 0, 0.3),
-    10px 0 8px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.3),
+    10px 0 10px -8px rgba(0, 0, 0, 0.3);
 }
 .baseNoteP {
   font-size: 18px;
@@ -49,10 +55,51 @@ h4{
   width: auto;
 }
 
+/************************** I D  *************************/
+#vscodeimage {
+  display: flex;
+  margin: 10px auto;
+  transition: 0.3s ease-in-out;
+}
+#vscodeimage:hover {
+  transform: scale(120%);
+}
+
+
+/********************** C O L L E C T I V E *********************/
+.border p {
+  margin-bottom: 15px;
+}
+
+/*************** U T I L I T Y - T O O L S ***************/
 .red {
   color: red;
 }
-
 .blue {
   color: blue;
+}
+.tab {
+  position: relative;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.border {
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.borderAnimate {
+  transition: 0.3s ease;
+}
+.borderAnimate:hover {
+  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.5),
+    10px 0 10px -8px rgba(0, 0, 0, 0.5);
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
