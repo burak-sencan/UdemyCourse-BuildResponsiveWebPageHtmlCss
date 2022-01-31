@@ -20,7 +20,6 @@ function changePosition() {
   Note3SpanTop.innerText = child.style.top;
   Note3SpanLeft.innerText = child.style.left;
 }
-changePosition();
 
 function getRandomNum() {
   return Math.floor(Math.random() * 200 + 100);
