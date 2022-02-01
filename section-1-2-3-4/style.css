@@ -54,7 +54,19 @@ h4 {
   margin: 10px;
   width: auto;
 }
+.note4InnerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.note4content {
+  width: 150px;
+  height: 150px;
 
+  background-color: #bbb;
+}
 /************************** I D  *************************/
 #vscodeimage {
   display: flex;
@@ -81,6 +93,43 @@ h4 {
   transition: transition 0.3s ease-in-out;
   transition-property: top, bottom, left, right;
 }
+#note4Div {
+  position: relative;
+  height: 500px;
+}
+#note4LeftDiv {
+  position: absolute;
+  left: 10px;
+  height: 250px;
+  width: 250px;
+
+
+}
+#note4RightDiv {
+  position: absolute;
+  right: 10px;
+  height: 250px;
+  width: 250px;
+}
+
+#note4LeftPDiv {
+  position: absolute;
+  left: 60px;
+  width: 180px;
+  bottom: 80px;
+
+  transition: transform 0.1s ease;
+}
+#note4RightPDiv {
+  position: absolute;
+  right: 155px;
+  bottom: 80px;
+}
+#note4RightContent {
+  width: 150px;
+  height: 150px;
+  transition: transition 0.1s ease;
+}
 
 /********************** C O L L E C T I V E *********************/
 .border p {
@@ -104,6 +153,9 @@ h4 {
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 5px;
+}
+.dotedBorder {
+  border: 5px dotted #a1a1a1;
 }
 .borderAnimate {
   transition: 0.3s ease;

@@ -21,7 +21,7 @@
         </h3>
       </div>
 
-      <div class="box" id="note1">
+      <div class="box" id="id1">
         <h1>:: or : ?</h1>
         <h2><span class="dot"></span> Psedou-elements</h2>
         <p>
@@ -103,13 +103,16 @@
           <span class="dot"></span> Also vscode help this issue when hovered
           selector
         </p>
-        <h3>(X, Y, Z)</h3>
-        <p>Consider that X is the number of ID selectors in the selector</p>
-        <p>
-          Y represents the number of class selectors, attribute selectors, and
-          pseudo-classes
-        </p>
-        <p>Z represents the number of type selectors and pseudo-elements</p>
+        <div class="baseNoteP">
+          <h3>(X, Y, Z)</h3>
+          <p>Consider that X is the number of ID selectors in the selector</p>
+          <p>
+            Y represents the number of class selectors, attribute selectors, and
+            pseudo-classes
+          </p>
+          <p>Z represents the number of type selectors and pseudo-elements</p>
+        </div>
+
         <img id="vscodeimage" src="./img/vscode-specificity.png" alt="" />
         <br />
         <div class="baseNoteP">
@@ -155,13 +158,16 @@
           When we want to one element absolute position in it's parent div we
           can use relative + absolute position together
         </p>
-        <p>
-          There is down one Div1 (its parent) and there is div2(child). We want
-          to change the position of div2 inside div1.
-        </p>
-        <p>1. make relative of div1 position property</p>
-        <p>2. and make absolute of div2 position property</p>
-        <p>Now we can set value of top,right,bottom,left</p>
+        <div class="baseNoteP">
+          <p>
+            There is down one Div1 (its parent) and there is div2(child). We
+            want to change the position of div2 inside div1.
+          </p>
+          <p>1. make relative of div1 position property</p>
+          <p>2. and make absolute of div2 position property</p>
+          <p>Now we can set value of top,right,bottom,left</p>
+        </div>
+
         <div class="border" id="note3ParentBox">
           <p>Top: <span id="Note3SpanTop"></span></p>
           <p>Left: <span id="Note3SpanLeft"></span></p>
@@ -170,7 +176,50 @@
         </div>
       </div>
 
-      <div class="box" id="id3">i will keep goin adding.</div>
+      <div class="box" id="id4">
+        <h1>"Content-Box" or "Border-box" ?</h1>
+        <p>
+          <span class="dot"></span> The box-sizing CSS property sets how the
+          total width and height of an element is calculated.<a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"
+            >MDN</a
+          >
+        </p>
+        <div class="baseNoteP">
+          <p>
+            Basically, content-box keeps the content size when we changed the
+            parent's padding or child's width/height or child's margin. On the
+            left I simulated of changing parent's padding or child's margin.
+          </p>
+          <p>
+            Border-box keeps the border size we had given the width/height at
+            css rule. When we change the parent's padding or the child's margin,
+            the total size remains the same.But child's(or content) size is
+            change. On the right, I animate the parent's padding changing or
+            child's margin changing. Total width not changing.
+          </p>
+        </div>
+
+        <div class="border" id="note4Div">
+          <div class="dotedBorder note4InnerDiv" id="note4LeftDiv">
+            <p>Box-Sizing: <span style="font-weight: 700">Content</span>-Box</p>
+            <div class="note4content" id="note4aLeftContent"></div>
+          </div>
+          <div class="dotedBorder note4InnerDiv" id="note4RightDiv">
+            <p>Box-Sizing: <span style="font-weight: 700">Border</span>-Box</p>
+            <div class="note4content" id="note4RightContent"></div>
+          </div>
+
+          <div class="border" id="note4LeftPDiv">
+            Total Width: <span></span>
+          </div>
+          <div class="border" id="note4RightPDiv">
+            Content Widt: <span>250px</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="id5">i will keep goin adding.</div>
     </div>
   </body>
 
