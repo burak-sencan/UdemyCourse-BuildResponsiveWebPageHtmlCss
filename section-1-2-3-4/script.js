@@ -69,22 +69,45 @@ function changeWidth() {
 
 /* For note5 button event*/
 const note5buttons = document.querySelectorAll(".note5Btn");
-const flexBox = document.getElementById("note5FlexBox")
-const note5Input = document.getElementById("note5Input")
+const flexBox = document.getElementById("note5FlexBox");
+const note5Input = document.getElementById("note5Input");
 
-note5Input.addEventListener("change",()=>{
-  
-  
-  flexBox.style.gap =  `${note5Input.value}px`
-})
+note5Input.addEventListener("change", () => {
+  flexBox.style.gap = `${note5Input.value}px`;
+});
 
 note5buttons.forEach((button, idx) => {
   button.addEventListener("click", () => {
-    changeFlexProperty(idx);
+    clearActive(idx);
+    changeFlexProperty(idx, button);
+    note5buttons[idx].classList.add("note5ActiveBtn");
+
+    /*0,1,2,3,4,5 => justfy-content */
+    if (idx >= 0 && idx <= 5) {
+    } else if (idx >= 6 && idx <= 10) {
+      /*6,7,8,9,10 => align-items */
+    } else if (idx >= 11 && idx <= 14) {
+      /*11,12,13,14 => flex-direction */
+    }
   });
 });
 
-function changeFlexProperty(idx) {
+function clearActive(idx) {
+  if (idx >= 0 && idx <= 5) {
+    for (let i = 0; i <= 5; i++)
+      note5buttons[i].classList.remove("note5ActiveBtn");
+  } else if (idx >= 6 && idx <= 10) {
+    /*6,7,8,9,10 => align-items */
+    for (let i = 6; i <= 10; i++)
+      note5buttons[i].classList.remove("note5ActiveBtn");
+  } else if (idx >= 11 && idx <= 14) {
+    /*11,12,13,14 => flex-direction */
+    for (let i = 11; i <= 14; i++)
+      note5buttons[i].classList.remove("note5ActiveBtn");
+  }
+}
+
+function changeFlexProperty(idx, button) {
   switch (idx) {
     case 0:
       console.log(idx);
@@ -102,6 +125,8 @@ function changeFlexProperty(idx) {
 
       break;
     case 3:
+      console.log(idx);
+
       flexBox.style.justifyContent = "space-between";
       break;
     case 4:

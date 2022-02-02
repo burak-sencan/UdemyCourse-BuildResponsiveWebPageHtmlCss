@@ -99,10 +99,7 @@ h4 {
   align-items:stretch;
   flex-direction:row
   */
-  gap: 0px;
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: row;
+  
 
 }
 .note5Btn {
