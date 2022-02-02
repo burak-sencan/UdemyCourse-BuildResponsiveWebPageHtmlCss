@@ -99,10 +99,11 @@ h4 {
   align-items:stretch;
   flex-direction:row
   */
-  gap: 20px;
+  gap: 0px;
   justify-content: center;
   align-items: stretch;
   flex-direction: row;
+
 }
 .note5Btn {
   padding: 5px;
@@ -218,6 +219,8 @@ h4 {
 
 #id5 .note5FlexBox div {
   color: var(--darkest);
+  padding: 0;
+  margin: 0;
 }
 /*************** U T I L I T Y - T O O L S ***************/
 .red {

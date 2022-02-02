@@ -70,6 +70,13 @@ function changeWidth() {
 /* For note5 button event*/
 const note5buttons = document.querySelectorAll(".note5Btn");
 const flexBox = document.getElementById("note5FlexBox")
+const note5Input = document.getElementById("note5Input")
+
+note5Input.addEventListener("change",()=>{
+  
+  
+  flexBox.style.gap =  `${note5Input.value}px`
+})
 
 note5buttons.forEach((button, idx) => {
   button.addEventListener("click", () => {
