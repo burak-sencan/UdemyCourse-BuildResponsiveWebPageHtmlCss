@@ -25,15 +25,13 @@ function getRandomNum() {
   return Math.floor(Math.random() * 200 + 100);
 }
 
-
-
 /* for Note 4 Section animated div section */
 const note4leftdiv = document.getElementById("note4LeftDiv");
 const note4rightdiv = document.getElementById("note4RightDiv");
 const note4leftP = document.getElementById("note4LeftPDiv");
 const note4rightP = document.getElementById("note4RightPDiv");
 const note4RightContent = document.getElementById("note4RightContent");
-console.log(note4RightContent);
+
 let note4leftdivW = 250;
 let note4RightContentW = 150;
 let increase = true;
@@ -69,5 +67,82 @@ function changeWidth() {
   }
 }
 
-
 /* For note5 button event*/
+const note5buttons = document.querySelectorAll(".note5Btn");
+note5buttons.forEach((button, idx) => {
+  button.addEventListener("click", () => {
+    changeFlexProperty(idx);
+  });
+});
+
+function changeFlexProperty(idx) {
+  switch (idx) {
+    case 0:
+      console.log(idx);
+      break;
+    case 1:
+      console.log(idx);
+      break;
+    case 2:
+      console.log(idx);
+      break;
+    case 3:
+      console.log(idx);
+      break;
+    case 4:
+      console.log(idx);
+      break;
+    case 5:
+      console.log(idx);
+      break;
+    case 6:
+      console.log(idx);
+      break;
+    case 7:
+      console.log(idx);
+      break;
+    case 8:
+      console.log(idx);
+      break;
+    case 9:
+      console.log(idx);
+      break;
+    case 10:
+      console.log(idx);
+      break;
+    case 11:
+      console.log(idx);
+      break;
+
+    case 12:
+      console.log(idx);
+      break;
+    case 13:
+      console.log(idx);
+      break;
+    case 14:
+      console.log(idx);
+      break;
+
+    default:
+      break;
+  }
+}
+
+/*
+script.js:76 <button class=​"note5Btn justifyOptions note5ActiveBtn">​flex-start​</button>​ 0
+script.js:76 <button class=​"note5Btn justifyOptions">​flex-end​</button>​ 1
+script.js:76 <button class=​"note5Btn justifyOptions">​center​</button>​ 2
+script.js:76 <button class=​"note5Btn justifyOptions">​space-between​</button>​ 3
+script.js:76 <button class=​"note5Btn justifyOptions">​space-around​</button>​ 4
+script.js:76 <button class=​"note5Btn justifyOptions">​space-evently​</button>​ 5
+script.js:76 <button class=​"note5Btn alignOptions note5ActiveBtn">​stretch​</button>​ 6
+script.js:76 <button class=​"note5Btn alignOptions ">​flex-start​</button>​ 7
+script.js:76 <button class=​"note5Btn alignOptions">​flex-end​</button>​ 8
+script.js:76 <button class=​"note5Btn alignOptions">​center​</button>​ 9
+script.js:76 <button class=​"note5Btn alignOptions">​baseline​</button>​ 10
+script.js:76 <button class=​"note5Btn directionOptions note5ActiveBtn">​row​</button>​ 11
+script.js:76 <button class=​"note5Btn directionOptions">​row-reversed​</button>​ 12
+script.js:76 <button class=​"note5Btn directionOptions">​column​</button>​ 13
+script.js:76 <button class=​"note5Btn directionOptions">​column-reverse​</button>​ 14
+*/
