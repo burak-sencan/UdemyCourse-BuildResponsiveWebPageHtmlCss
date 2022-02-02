@@ -82,6 +82,7 @@ function changeFlexProperty(idx) {
     case 0:
       console.log(idx);
       flexBox.style.justifyContent = "flex-start";
+
       break;
     case 1:
       console.log(idx);
@@ -103,7 +104,7 @@ function changeFlexProperty(idx) {
       break;
     case 5:
       console.log(idx);
-      flexBox.style.justifyContent = "space-evently";
+      flexBox.style.justifyContent = "space-evenly";
 
       break;
     case 6:
@@ -138,7 +139,7 @@ function changeFlexProperty(idx) {
       break;
     case 12:
       console.log(idx);
-      flexBox.style.flexDirection = "row-reversed";
+      flexBox.style.flexDirection = "row-reverse";
 
       break;
     case 13:
