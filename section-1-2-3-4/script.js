@@ -25,6 +25,8 @@ function getRandomNum() {
   return Math.floor(Math.random() * 200 + 100);
 }
 
+
+
 /* for Note 4 Section animated div section */
 const note4leftdiv = document.getElementById("note4LeftDiv");
 const note4rightdiv = document.getElementById("note4RightDiv");
@@ -66,3 +68,6 @@ function changeWidth() {
     note4rightP.innerText = `Content Width: ${note4leftdivW}px`;
   }
 }
+
+
+/* For note5 button event*/

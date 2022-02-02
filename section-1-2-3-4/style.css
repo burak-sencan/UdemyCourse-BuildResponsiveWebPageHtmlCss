@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+/******************* V A R I A B L E  ***********************/
+:root {
+  --light: #f1f1f1;
+  --medium: #d1d1d1;
+  --dark: #bbb;
+  --darkest: #212529;
+}
+
 /******************* E L E M E N T ***********************/
 * {
   box-sizing: border-box;
@@ -67,6 +75,66 @@ h4 {
 
   background-color: #bbb;
 }
+
+/*note-5*/
+.note5FlexBoxProperties {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  height: auto;
+}
+.note5FlexBox {
+  display: flex;
+
+  width: 500px;
+  height: 300px;
+
+  font-size: 20px;
+  border-radius: 0px !important;
+  /*
+  Defaults
+  gap:0;
+  justify-content:flex-start;
+  align-items:stretch;
+  flex-direction:row
+  */
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+}
+.note5Btn {
+  padding: 5px;
+  font-size: 14px;
+  font-family: inherit;
+  text-transform: uppercase;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.note5ActiveBtn {
+  background-color: var(--medium);
+}
+.note5Btn:hover {
+  background-color: var(--medium);
+}
+.note5Btn:focus {
+  outline: none;
+}
+.el-1 {
+}
+.el-2 {
+}
+.el-3 {
+}
+.el-4 {
+}
+.el-5 {
+}
+
+/*note6*/
 /************************** I D  *************************/
 #vscodeimage {
   display: flex;
@@ -102,8 +170,6 @@ h4 {
   left: 10px;
   height: 250px;
   width: 250px;
-
-
 }
 #note4RightDiv {
   position: absolute;
@@ -136,6 +202,23 @@ h4 {
   margin-bottom: 15px;
 }
 
+#id5 .note5FlexBoxProperties p {
+  display: inline-block;
+  margin: 0 10px 0 0;
+
+  font-weight: bold;
+}
+#id5 .note5FlexBoxProperties div {
+  padding: 5px;
+  border-bottom: 1px solid var(--dark);
+}
+#id5 .note5FlexBoxProperties div:last-child {
+  border-bottom: none;
+}
+
+#id5 .note5FlexBox div {
+  color: var(--darkest);
+}
 /*************** U T I L I T Y - T O O L S ***************/
 .red {
   color: red;
