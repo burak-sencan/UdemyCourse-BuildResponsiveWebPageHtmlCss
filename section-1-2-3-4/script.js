@@ -69,6 +69,8 @@ function changeWidth() {
 
 /* For note5 button event*/
 const note5buttons = document.querySelectorAll(".note5Btn");
+const flexBox = document.getElementById("note5FlexBox")
+
 note5buttons.forEach((button, idx) => {
   button.addEventListener("click", () => {
     changeFlexProperty(idx);
@@ -79,49 +81,75 @@ function changeFlexProperty(idx) {
   switch (idx) {
     case 0:
       console.log(idx);
+      flexBox.style.justifyContent = "flex-start";
       break;
     case 1:
       console.log(idx);
+      flexBox.style.justifyContent = "flex-end";
+
       break;
     case 2:
       console.log(idx);
+      flexBox.style.justifyContent = "center";
+
       break;
     case 3:
-      console.log(idx);
+      flexBox.style.justifyContent = "space-between";
       break;
     case 4:
       console.log(idx);
+      flexBox.style.justifyContent = "space-around";
+
       break;
     case 5:
       console.log(idx);
+      flexBox.style.justifyContent = "space-evently";
+
       break;
     case 6:
       console.log(idx);
+      flexBox.style.alignItems = "stretch";
+
       break;
     case 7:
       console.log(idx);
+      flexBox.style.alignItems = "flex-start";
+
       break;
     case 8:
       console.log(idx);
+      flexBox.style.alignItems = "flex-end";
+
       break;
     case 9:
       console.log(idx);
+      flexBox.style.alignItems = "center";
+
       break;
     case 10:
       console.log(idx);
+      flexBox.style.alignItems = "baseline";
+
       break;
     case 11:
       console.log(idx);
-      break;
+      flexBox.style.flexDirection = "row";
 
+      break;
     case 12:
       console.log(idx);
+      flexBox.style.flexDirection = "row-reversed";
+
       break;
     case 13:
       console.log(idx);
+      flexBox.style.flexDirection = "column";
+
       break;
     case 14:
       console.log(idx);
+      flexBox.style.flexDirection = "column-reverse";
+
       break;
 
     default:
