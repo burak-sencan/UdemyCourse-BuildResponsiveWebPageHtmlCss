@@ -86,10 +86,8 @@ h4 {
 }
 .note5FlexBox {
   display: flex;
-
   width: 500px;
   height: 300px;
-
   font-size: 20px;
   border-radius: 0px !important;
   /*
@@ -99,8 +97,6 @@ h4 {
   align-items:stretch;
   flex-direction:row
   */
-  
-
 }
 .note5Btn {
   padding: 5px;

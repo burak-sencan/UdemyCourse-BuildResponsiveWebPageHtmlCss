@@ -71,9 +71,11 @@ function changeWidth() {
 const note5buttons = document.querySelectorAll(".note5Btn");
 const flexBox = document.getElementById("note5FlexBox");
 const note5Input = document.getElementById("note5Input");
+const note5InputGap = document.getElementById("note5InputGap");
 
 note5Input.addEventListener("change", () => {
   flexBox.style.gap = `${note5Input.value}px`;
+  note5InputGap.innerText = `${note5Input.value}px`;
 });
 
 note5buttons.forEach((button, idx) => {
@@ -81,18 +83,11 @@ note5buttons.forEach((button, idx) => {
     clearActive(idx);
     changeFlexProperty(idx, button);
     note5buttons[idx].classList.add("note5ActiveBtn");
-
-    /*0,1,2,3,4,5 => justfy-content */
-    if (idx >= 0 && idx <= 5) {
-    } else if (idx >= 6 && idx <= 10) {
-      /*6,7,8,9,10 => align-items */
-    } else if (idx >= 11 && idx <= 14) {
-      /*11,12,13,14 => flex-direction */
-    }
   });
 });
 
 function clearActive(idx) {
+  /*0,1,2,3,4,5 => justfy-content */
   if (idx >= 0 && idx <= 5) {
     for (let i = 0; i <= 5; i++)
       note5buttons[i].classList.remove("note5ActiveBtn");
@@ -110,100 +105,52 @@ function clearActive(idx) {
 function changeFlexProperty(idx, button) {
   switch (idx) {
     case 0:
-      console.log(idx);
       flexBox.style.justifyContent = "flex-start";
-
       break;
     case 1:
-      console.log(idx);
       flexBox.style.justifyContent = "flex-end";
-
       break;
     case 2:
-      console.log(idx);
       flexBox.style.justifyContent = "center";
-
       break;
     case 3:
-      console.log(idx);
-
       flexBox.style.justifyContent = "space-between";
       break;
     case 4:
-      console.log(idx);
       flexBox.style.justifyContent = "space-around";
-
       break;
     case 5:
-      console.log(idx);
       flexBox.style.justifyContent = "space-evenly";
-
       break;
     case 6:
-      console.log(idx);
       flexBox.style.alignItems = "stretch";
-
       break;
     case 7:
-      console.log(idx);
       flexBox.style.alignItems = "flex-start";
-
       break;
     case 8:
-      console.log(idx);
       flexBox.style.alignItems = "flex-end";
-
       break;
     case 9:
-      console.log(idx);
       flexBox.style.alignItems = "center";
-
       break;
     case 10:
-      console.log(idx);
       flexBox.style.alignItems = "baseline";
-
       break;
     case 11:
-      console.log(idx);
       flexBox.style.flexDirection = "row";
-
       break;
     case 12:
-      console.log(idx);
       flexBox.style.flexDirection = "row-reverse";
-
       break;
     case 13:
-      console.log(idx);
       flexBox.style.flexDirection = "column";
-
       break;
     case 14:
-      console.log(idx);
       flexBox.style.flexDirection = "column-reverse";
-
       break;
 
     default:
       break;
   }
 }
-
-/*
-script.js:76 <button class=​"note5Btn justifyOptions note5ActiveBtn">​flex-start​</button>​ 0
-script.js:76 <button class=​"note5Btn justifyOptions">​flex-end​</button>​ 1
-script.js:76 <button class=​"note5Btn justifyOptions">​center​</button>​ 2
-script.js:76 <button class=​"note5Btn justifyOptions">​space-between​</button>​ 3
-script.js:76 <button class=​"note5Btn justifyOptions">​space-around​</button>​ 4
-script.js:76 <button class=​"note5Btn justifyOptions">​space-evently​</button>​ 5
-script.js:76 <button class=​"note5Btn alignOptions note5ActiveBtn">​stretch​</button>​ 6
-script.js:76 <button class=​"note5Btn alignOptions ">​flex-start​</button>​ 7
-script.js:76 <button class=​"note5Btn alignOptions">​flex-end​</button>​ 8
-script.js:76 <button class=​"note5Btn alignOptions">​center​</button>​ 9
-script.js:76 <button class=​"note5Btn alignOptions">​baseline​</button>​ 10
-script.js:76 <button class=​"note5Btn directionOptions note5ActiveBtn">​row​</button>​ 11
-script.js:76 <button class=​"note5Btn directionOptions">​row-reversed​</button>​ 12
-script.js:76 <button class=​"note5Btn directionOptions">​column​</button>​ 13
-script.js:76 <button class=​"note5Btn directionOptions">​column-reverse​</button>​ 14
-*/
