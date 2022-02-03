@@ -93,6 +93,8 @@ h4 {
   height: 300px;
   font-size: 20px;
   border-radius: 0px !important;
+
+  
   /*
   Defaults
   gap:0;
@@ -120,15 +122,23 @@ h4 {
 .note5Btn:focus {
   outline: none;
 }
-.el-1 {
+
+/*selector spasificity (0,2,0s)*/
+
+.note5FlexBox .el-1 {
+  order: 1;
 }
-.el-2 {
+.note5FlexBox .el-2 {
+  order: 3;
 }
-.el-3 {
+.note5FlexBox .el-3 {
+  order: 5;
 }
-.el-4 {
+.note5FlexBox .el-4 {
+  order: 7;
 }
-.el-5 {
+.note5FlexBox .el-5 {
+  order: 9;
 }
 
 /*note6*/
@@ -225,7 +235,7 @@ h4 {
 .blue {
   color: blue;
 }
-.bold{
+.bold {
   font-weight: bold;
 }
 .tab {

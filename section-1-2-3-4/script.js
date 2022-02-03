@@ -72,6 +72,7 @@ const note5buttons = document.querySelectorAll(".note5Btn");
 const flexBox = document.getElementById("note5FlexBox");
 const note5Input = document.getElementById("note5Input");
 const note5InputGap = document.getElementById("note5InputGap");
+const el_3 = document.getElementById("el_3");
 
 note5Input.addEventListener("change", () => {
   flexBox.style.gap = `${note5Input.value}px`;
@@ -99,7 +100,19 @@ function clearActive(idx) {
     /*11,12,13,14 => flex-direction */
     for (let i = 11; i <= 14; i++)
       note5buttons[i].classList.remove("note5ActiveBtn");
-  }
+  } else if (idx >= 15 && idx <= 19) {
+    /*6,7,8,9,10 => align-selft */
+    for (let i = 15; i <= 19; i++)
+      note5buttons[i].classList.remove("note5ActiveBtn");
+  } else if (idx >= 20 && idx <= 21) {
+    /*20,21 => flex-grow */
+    for (let i = 20; i <= 21; i++)
+      note5buttons[i].classList.remove("note5ActiveBtn");
+  } else if (idx >= 22 && idx <= 27) {
+    /*22,23,24,25,26 => flex-order */
+    for (let i = 22; i <= 27; i++){
+      note5buttons[i].classList.remove("note5ActiveBtn");
+  }}
 }
 
 const properties = [
@@ -118,6 +131,21 @@ const properties = [
   "row-reverse",
   "column",
   "column-reverse",
+  "stretch",
+  "flex-start",
+  "flex-end",
+  "center",
+  "baseline",
+
+  "0",
+  "1",
+
+  "0",
+  "2",
+  "4",
+  "6",
+  "8",
+  "10",
 ];
 function changeFlexProperty(idx) {
   if (idx >= 0 && idx <= 5) {
@@ -126,5 +154,12 @@ function changeFlexProperty(idx) {
     flexBox.style.alignItems = properties[idx];
   } else if (idx >= 11 && idx <= 14) {
     flexBox.style.flexDirection = properties[idx];
+  } else if (idx >= 15 && idx <= 19) {
+    el_3.style.alignSelf = properties[idx];
+  } else if (idx >= 20 && idx <= 21) {
+    el_3.style.flexGrow = properties[idx];
+  } else if (idx >= 22 && idx <= 27) {
+    el_3.style.order = properties[idx];
+    console.log(el_3.style.order);
   }
 }
