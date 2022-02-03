@@ -102,55 +102,29 @@ function clearActive(idx) {
   }
 }
 
-function changeFlexProperty(idx, button) {
-  switch (idx) {
-    case 0:
-      flexBox.style.justifyContent = "flex-start";
-      break;
-    case 1:
-      flexBox.style.justifyContent = "flex-end";
-      break;
-    case 2:
-      flexBox.style.justifyContent = "center";
-      break;
-    case 3:
-      flexBox.style.justifyContent = "space-between";
-      break;
-    case 4:
-      flexBox.style.justifyContent = "space-around";
-      break;
-    case 5:
-      flexBox.style.justifyContent = "space-evenly";
-      break;
-    case 6:
-      flexBox.style.alignItems = "stretch";
-      break;
-    case 7:
-      flexBox.style.alignItems = "flex-start";
-      break;
-    case 8:
-      flexBox.style.alignItems = "flex-end";
-      break;
-    case 9:
-      flexBox.style.alignItems = "center";
-      break;
-    case 10:
-      flexBox.style.alignItems = "baseline";
-      break;
-    case 11:
-      flexBox.style.flexDirection = "row";
-      break;
-    case 12:
-      flexBox.style.flexDirection = "row-reverse";
-      break;
-    case 13:
-      flexBox.style.flexDirection = "column";
-      break;
-    case 14:
-      flexBox.style.flexDirection = "column-reverse";
-      break;
-
-    default:
-      break;
+const properties = [
+  "flex-start",
+  "flex-end",
+  "center",
+  "space-between",
+  "space-around",
+  "space-evenly",
+  "stretch",
+  "flex-start",
+  "flex-end",
+  "center",
+  "baseline",
+  "row",
+  "row-reverse",
+  "column",
+  "column-reverse",
+];
+function changeFlexProperty(idx) {
+  if (idx >= 0 && idx <= 5) {
+    flexBox.style.justifyContent = properties[idx];
+  } else if (idx >= 6 && idx <= 10) {
+    flexBox.style.alignItems = properties[idx];
+  } else if (idx >= 11 && idx <= 14) {
+    flexBox.style.flexDirection = properties[idx];
   }
 }
