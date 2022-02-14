@@ -163,3 +163,48 @@ function changeFlexProperty(idx) {
     console.log(el_3.style.order);
   }
 }
+
+
+
+
+/*For note6 grid features */
+const grid_template_columns_1 = document.getElementById("grid-template-columns-1")
+const grid_template_columns_2 = document.getElementById("grid-template-columns-2")
+const grid_template_columns_3 = document.getElementById("grid-template-columns-3")
+const grid_template_columns_4 = document.getElementById("grid-template-columns-4")
+const grid_template_columns_5 = document.getElementById("grid-template-columns-5")
+const grid_template_columns_6 = document.getElementById("grid-template-columns-6")
+const grid_template_columns_7 = document.getElementById("grid-template-columns-7")
+const grid_template_columns_8 = document.getElementById("grid-template-columns-8")
+// const options = document.querySelectorAll(".grid-p")
+const grid_template_columns_div = document.getElementById("grid-template-columns-div") 
+console.log(grid_template_columns_div)
+
+grid_template_columns_1.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "60px 60px"
+})
+grid_template_columns_2.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "1fr 60px"
+})
+grid_template_columns_3.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "1fr 2fr"
+})
+grid_template_columns_4.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "8ch auto"
+})
+grid_template_columns_5.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "repeat(5,60px)"
+})
+grid_template_columns_6.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "minmax(20px, 1fr)"
+  
+})
+grid_template_columns_7.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "fit-content(40%)"
+  
+})
+grid_template_columns_8.addEventListener("click",()=>{
+  grid_template_columns_div.style.gridTemplateColumns = "repeat(auto-fill, 60px) 40%"
+
+  
+})

@@ -94,7 +94,6 @@ h4 {
   font-size: 20px;
   border-radius: 0px !important;
 
-  
   /*
   Defaults
   gap:0;
@@ -124,7 +123,6 @@ h4 {
 }
 
 /*selector spasificity (0,2,0s)*/
-
 .note5FlexBox .el-1 {
   order: 1;
 }
@@ -142,6 +140,37 @@ h4 {
 }
 
 /*note6*/
+.grid{
+  display: grid;
+  min-height: 450px;
+}
+.grid-options{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.grid-note{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 50px;
+}
+.grid-p{
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0  !important;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+.grid-p:hover{
+  cursor: pointer;
+  color: var(--darkest);
+  background-color: var(--medium);
+}
 /************************** I D  *************************/
 #vscodeimage {
   display: flex;
@@ -203,6 +232,7 @@ h4 {
   height: 150px;
   transition: transition 0.1s ease;
 }
+/*note6 grid*/
 
 /********************** C O L L E C T I V E *********************/
 .border p {
@@ -265,4 +295,33 @@ h4 {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+}
+.box-mini{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: var(--dark);
+}
+.box-medium{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark);
+
+}
+.box-large{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: var(--dark);
+
+}
+.background-dark{
+  background-color: var(--dark);
+}
+.background-darkest{
+  background-color: var(--darkest);
+}
+.background-light{
+  background-color: var(--light);
 }
