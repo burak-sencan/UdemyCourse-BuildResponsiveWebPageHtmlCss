@@ -205,6 +205,4 @@ grid_template_columns_7.addEventListener("click",()=>{
 })
 grid_template_columns_8.addEventListener("click",()=>{
   grid_template_columns_div.style.gridTemplateColumns = "repeat(auto-fill, 60px) 40%"
-
-  
 })
