@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/******************* V A R I A B L E  ***********************/
+:root {
+  --light: #f1f1f1;
+  --medium: #d1d1d1;
+  --dark: #bbb;
+  --darkest: #212529;
+}
+
+/******************* E L E M E N T ***********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(79, 76, 76);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+h3 {
+  text-align: justify;
+}
+h4 {
+  margin-bottom: 10px;
+}
+
+/********************** C L A S S **************************/
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.box {
+  position: relative;
+  background-color: #f1f1f1;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.3),
+    10px 0 10px -8px rgba(0, 0, 0, 0.3);
+}
+.baseNoteP {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.exampleText {
+  position: relative;
+  margin-left: 50px;
+  background-color: #f7f6f6;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+}
+/*note-1*/
+.note-1-p:hover {
+  cursor: pointer;
+}
+/************************** I D  *************************/
+
+/********************** C O L L E C T I V E *********************/
+
+/*************** U T I L I T Y - T O O L S ***************/
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.bold {
+  font-weight: bold;
+}
+.tab {
+  position: relative;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.border {
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.dotedBorder {
+  border: 5px dotted #a1a1a1;
+}
+.borderAnimate {
+  transition: 0.3s ease;
+}
+.borderAnimate:hover {
+  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.5),
+    10px 0 10px -8px rgba(0, 0, 0, 0.5);
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.box-mini {
+  display: inline-block;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: var(--dark);
+}
+.box-medium {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark);
+}
+.box-large {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: var(--dark);
+}
+.background-dark {
+  background-color: var(--dark);
+}
+.background-darkest {
+  background-color: var(--darkest);
+}
+.background-light {
+  background-color: var(--light);
+}
