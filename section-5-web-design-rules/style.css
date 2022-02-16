@@ -79,7 +79,7 @@ h4 {
 /*note-1*/
 .note-1-p {
   padding: 5px;
-  margin-left: 10px;
+ 
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
 }
