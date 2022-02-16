@@ -2,6 +2,15 @@
 * {
   box-sizing: border-box;
 }
+*{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
 
 /******************* V A R I A B L E  ***********************/
 :root {
@@ -10,7 +19,6 @@
   --dark: #bbb;
   --darkest: #212529;
 }
-
 /******************* E L E M E N T ***********************/
 * {
   box-sizing: border-box;
@@ -69,8 +77,25 @@ h4 {
   width: auto;
 }
 /*note-1*/
+.note-1-p {
+  padding: 5px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
 .note-1-p:hover {
   cursor: pointer;
+  background-color: var(--dark);
+  color: var(--darkest);
+}
+.note-1-img {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  transition: all 0.5s ease-in-out;
+}
+.note-1-img:hover {
+  transform: translateX(-50%) scale(150%);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 /************************** I D  *************************/
 
@@ -141,4 +166,12 @@ h4 {
 }
 .background-light {
   background-color: var(--light);
+}
+/*************** M E D İ A - K E Y F R A M E ***************/
+@keyframes fadeIn {
+  0% {opacity:0;}
+  20% {opacity:0.2;}
+  50% {opacity:0.5;}
+  80% {opacity:0.8;}
+  100% {opacity:1;}
 }
