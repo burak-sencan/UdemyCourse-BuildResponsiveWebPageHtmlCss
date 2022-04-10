@@ -2,13 +2,13 @@
 * {
   box-sizing: border-box;
 }
-*{
+* {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
@@ -46,9 +46,9 @@ h4 {
 
 /********************** C L A S S **************************/
 .container {
-  width: 100%;
+  width: 95%;
   height: auto;
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 10px auto;
 }
 
@@ -57,8 +57,7 @@ h4 {
   background-color: #f1f1f1;
   margin: 30px auto;
   padding: 30px;
-  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.3),
-    10px 0 10px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.3), 10px 0 10px -8px rgba(0, 0, 0, 0.3);
 }
 .baseNoteP {
   font-size: 16px;
@@ -79,7 +78,7 @@ h4 {
 /*note-1*/
 .note-1-p {
   padding: 5px;
- 
+
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
 }
@@ -96,6 +95,14 @@ h4 {
 .note-1-img:hover {
   transform: translateX(-50%) scale(150%);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+/*Note2*/
+.note-2-div{
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 /************************** I D  *************************/
 
@@ -129,8 +136,7 @@ h4 {
   transition: 0.3s ease;
 }
 .borderAnimate:hover {
-  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.5),
-    10px 0 10px -8px rgba(0, 0, 0, 0.5);
+  box-shadow: -10px 0 8px -10px rgba(0, 0, 0, 0.5), 10px 0 10px -8px rgba(0, 0, 0, 0.5);
 }
 .dot {
   height: 15px;
@@ -169,9 +175,19 @@ h4 {
 }
 /*************** M E D İ A - K E Y F R A M E ***************/
 @keyframes fadeIn {
-  0% {opacity:0;}
-  20% {opacity:0.2;}
-  50% {opacity:0.5;}
-  80% {opacity:0.8;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
